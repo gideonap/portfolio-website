@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gideon's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Gideon</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I am</p>
+      <h1 class="my_name">Gideon Aji Prakoso</h1>
+      <p class="section_text_p2">
+        Passionate to craft an intuitive <br>
+        and visually stunning digital <br>
+        experiences that delight users.
+      </p>
+
+      <div class="btn-container">
+        <button class="btn btn-color-2" 
+        onclick="window.open('./assets/CV - Gideon Aji Prakoso.pdf')">
+          My Resume
+        </button>
+        <button class="btn btn-color-1" 
+        onclick="location.href='./#contact'">
+          Talk with Me
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section_text__p1">About Me</p>
+    <div class="section-container">
+      <div class="section_pic-container">
+        <img src="./assets/poto about.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="social_box">
+        <img src="./assets/instagram.svg" alt="Instagram" class="social"
+          onclick="window.location.href='https://instagram.com/g.ideonn'">
+        <img src="./assets/linkedin.svg" alt="LinkedIn" class="social"
+          onclick="window.location.href='https://linkedin.com/in/gideonaprakoso/'">
+        <img src="./assets/dribbble.svg" alt="Dribbble" class="social"
+          onclick="window.location.href='https://dribbble.com/noedig/'">
+      </div>
+      <div class="about-details-container">
+        <div class="text-container">
+          <p>
+            I am an undergraduate student of Informatics Engineering at
+            Brawijaya University who is enthusiastic about UI/UX design
+            and Web Development. Actively pursuing opportunities to gain
+            hands-on experience in UI/UX design and aiming to contribute
+            to real-world projects and advancing my expertise.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="skills">        
+        <div class="what-do-i-container">
+          <p class="what-do-i-do">What Do I Do?</p>
+        </div>
+        
+        <div class="love-to-craft-container">
+          <p class="love-to-craft">
+            I love to craft functional solutions for
+            unique problems. These are some skills
+            I've picked up over my career.
+          </p>
+        </div>
+        
+        <div class="project-parent">            
+          
+          <div class="group-item-1">
+            <div class="ui-ux-design-parent">
+              <div class="ui-ux">UI/UX Design
+                <div class="as-a-uiux-designer-i-special-parent">
+                  <p class="as-a-uiux">
+                    In UI/UX design, I create beautiful and intuitive 
+                    designs that make your website or application 
+                    stand out.
+                  </p>
+                  <img src="./assets/figma.svg" alt="Figma" class="figma-icon">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="group-item-2">
+            <div class="fe-parent">
+              <div class="fe">Front-End Website
+                <div class="as-a-fe-parent">
+                  <p class="as-a-fe">
+                    In front-end web development, I craft stunning and 
+                    user-friendly interfaces with HTML, CSS, and 
+                    JavaScript.
+                  </p>
+                  <div class="fe-icons">
+                  <img src="./assets/html.svg" alt="HTML" class="html-icon">
+                  <img src="./assets/css.svg" alt="CSS" class="css-icon">
+                  <img src="./assets/js.svg" alt="JavaScript" class="js-icon">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group-item-3">
+            <div class="design-parent">
+              <div class="design">Graphic Design
+                <div class="as-a-design-parent">
+                  <p class="as-a-design">
+                    In graphic design, I create various visually captivating 
+                    graphic using tools like Adobe Photoshop and Adobe Illustrator.
+                  </p>
+                  <div class="design-icons">
+                  <img src="./assets/ps.svg" alt="Photoshop" class="ps-icon">
+                  <img src="./assets/ai.svg" alt="Illustrator" class="ai-icon">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+  </section>
+
+  <section id="projects">
+    <div class="my_project-container">
+      <p class="my_project">My Projects</p>
+    </div>
+
+    <div class="group-parent">
+      
+      <div class="project-container">
+          <div class="group-project-1">
+            <img src="./assets/corall.svg" alt="CORALL" class="corall">
+            <div class="text-project">
+              <div class="project-name-parent">
+                <div class="project-name">
+                  CORALL
+                </div>
+              </div>
+              <div class="view-project-parent" 
+              onclick="window.location.href='https://dribbble.com/shots/23323890-CORALL'">
+                <div class="view-project">View Project</div>
+                <img src="./assets/arrow.svg" alt="View Project" class="view-project-arrow">
+                <div class="rectangle-frame">
+                  <div class="rectangle-div">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group-project-2">
+            <img src="./assets/Prakoso TV.svg" alt="Prakoso TV" class="ptv">
+            <div class="text-project-2">
+              <div class="project-name-parent-2">
+                <div class="project-name-2">
+                  Prakoso TV
+                </div>
+              </div>
+              <div class="view-project-parent-2" 
+              onclick="window.location.href='https://dribbble.com/shots/23323949-Prakoso-TV'">
+                <div class="view-project-2">View Project</div>
+                <img src="./assets/arrow.svg" alt="View Project" class="view-project-arrow">
+                <div class="rectangle-frame-2">
+                  <div class="rectangle-div-2">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-parent">
+        <div class="button-explore">
+        </div>
+        <div class="explore-all-the-project-wrapper">
+            <p class="explore-all-the">Explore all the project</p>
+        </div>
+     </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+
+    <div class="contact-parent">
+      <div class="lets-work-together-wrapper">
+        <p>
+          Let’s <br>
+          Work Together
+        </p>
+      </div>
+      
+      <div class="contact-container">
+        <div class="rectangle_my_email-parent"
+        onclick="window.location.href='https://gmail.com'">
+          <div class="email-div" >
+            <div class="my_email-wrapper">
+              <p class="my_email">gideonaprakoso@gmail.com</p>
+            </div>
+            <img src="./assets/gmail2.svg" alt="Gmail" class="gmail-icon">      
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="icons-footer-container">
+      <img src="./assets/dribbble-footer.svg" alt="Dribbble" class="footer-icon"
+      onclick="window.location.href='https://dribbble.com/noedig/'">
+      <img src="./assets/gmail-footer.svg" alt="Gmail" class="footer-icon"
+      onclick="window.location.href='https://gmail.com'"">        
+      <img src="./assets/linkedin-footer.svg" alt="LinkedIn" class="footer-icon"
+      onclick="window.location.href='https://linkedin.com/in/gideonaprakoso/'">
+      <img src="./assets/instagram-footer.svg" alt="Instagram" class="footer-icon"
+      onclick="window.location.href='https://instagram.com/g.ideonn'">
+    </div>
+  
+    <p class="copyright">Copyright @ 2024 Gideon Aji Prakoso. All Rights Reserved.</p>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

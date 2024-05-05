@@ -1,0 +1,733 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  p {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* TRANSITION */
+  
+  a,.btn {
+    transition: all 300ms ease;
+  }
+  
+  /* DESKTOP NAV */
+  
+  nav,
+  .nav-links {
+    display: flex;
+  }
+  
+  nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 170px;
+  }
+  
+  .nav-links {
+    gap: 32px;
+    list-style: none;
+    font-size: 20px;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+  }
+  
+  a:hover {
+    color: #5500ff;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+  
+  .logo:hover {
+    cursor: default;
+  }
+  
+  /* SECTIONS */
+  
+  section {
+    padding-top: 40px;
+    height: 550px;
+    width: 850px;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+  
+  .section-container {
+    display: flex;
+  }
+  
+  /* PROFILE SECTION */
+  
+  #profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+  }
+
+  .section_text {
+    align-self: center;
+    text-align: center;
+  }
+  
+  .section_text_p1 {
+    display: flex;
+    font-weight: 400;
+    text-align: center;
+    font-size: 32px;
+    color: black;
+    white-space: nowrap;
+    position: absolute;
+    top: 40%;
+    left: 14%;
+  }
+
+  .my_name {
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 14%;
+  }
+
+  .section_text_p2 {
+    display: flex;
+    font-weight: 400;
+    text-align: center;
+    font-size: 32px;
+    color: black;
+    white-space: nowrap;
+    position: absolute;
+    top: 37%;
+    right: 14%;
+  }
+  
+  /* BUTTONS */
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .btn {
+    font-weight: 600;
+    transition: all 700ms ease;
+    padding: 16px;
+    width: 120px;
+    border-radius: 10px;
+    background: white;
+  }
+  
+  .btn-color-1, .btn-color-2 {
+    border: rgb(0, 0, 0) 1.6px solid;
+  }
+  
+  .btn-color-1:hover, .btn-color-2:hover {
+    cursor: pointer;
+  }
+  
+  .btn-color-1, .btn-color-2:hover {
+    background: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  .btn-color-1:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+  }
+  
+  .btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+  }
+  
+  .btn-container {
+    display: flex;
+    gap: 16px;
+    margin-left: 470px;
+  }
+  
+  /* ABOUT SECTION */
+  
+  #about {
+    position: relative;
+    top: -75px;
+  }
+
+  .section_text__p1 {
+    display: flex;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    top: -5%;
+  }
+
+  .social_box {
+    display: flex;
+    gap: 20px;
+    height: 40px;
+    width: 40px;
+    margin-left: 445px;
+    margin-top: -35px;
+  }
+
+  .social {
+    cursor: pointer;
+  }
+
+  .social:hover{
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  
+  .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    bottom: 100px;
+  }
+
+  .text-container {
+    display: flex;
+    font-size: 24px;
+    margin-left: 350px;
+    margin-top: 53px;
+    line-height: 2;
+  }
+
+  .about-pic {
+    display: flex;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    border: 1.5px solid #000000;
+  }
+
+  /* SKILLS SECTION */ 
+  #skills {
+    position: relative;
+    top: -50px;
+  }
+
+  .what-do-i-container {
+    display: flex;
+  	position: absolute;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+  	top: 50px;
+  	left: 0px;
+  }
+  
+  .love-to-craft-container {
+    display: flex;
+  	position: absolute;
+  	top: 130px;
+  	left: 0px;
+  	font-size: 24px;
+    line-height: 1.5;
+  }
+  
+  .project-parent {
+    display: flex;
+  	position: absolute;
+  	top: 236px;
+  	left: 9px;
+  	/* width: 1111px; */
+  	height: 344px;
+  	font-size: 28px;
+  }
+
+  .group-item-1 {
+    display: flex;
+  	position: absolute;
+  	top: 20px;
+  	left: -17px;
+  	border: 1px solid #000000;
+  	box-sizing: border-box;
+    border-radius: 10px;
+  	width: 300px;
+  	height: 250px;
+  }
+  
+  .ui-ux-design-parent {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 30px;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    width: 260px;
+    height: 136px;
+  }
+  
+  .as-a-uiux-designer-i-special-parent {
+    display: flex;
+  	position: absolute;
+  	top: 53px;
+  	left: 0px;
+  	width: 260px;
+  	height: 83px;
+  	font-size: 14px;
+  	color: #000000;
+  }
+
+  .figma-icon { 
+    position: absolute;
+    top: -117px;
+    left: 0px;
+  }
+
+  .group-item-2 {
+  	position: absolute;
+  	top: 20px;
+  	left: 300px;
+  	border: 1px solid #000000;
+  	box-sizing: border-box;
+    border-radius: 10px;
+  	width: 300px;
+  	height: 250px;
+  }
+  
+  .fe-parent {
+    margin-top: 60px;
+    margin-left: 30px;
+    position: absolute;
+  	top: 43px;
+  	left: 0px;
+  	width: 260px;
+  	height: 136px;
+  }
+  
+  .as-a-fe-parent {
+    position: absolute;
+    top: 53px;
+    left: 0; 
+    width: 260px;
+    height: 83px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .fe-icons {
+    display: flex;
+    position: absolute;
+    top: -117px;
+    left: 0px;
+    gap: 20px;
+  }
+
+  .group-item-3 {
+  	position: absolute;
+  	top: 0px;
+  	left: 316px;
+  	border: 1px solid #000000;
+  	box-sizing: border-box;
+    border-radius: 10px;
+  	width: 300px;
+  	height: 250px;
+  }
+  
+  .design-parent {
+    margin-top: 60px;
+    margin-left: 30px;
+    position: absolute;
+  	top: 43px;
+  	left: 0px;
+  	width: 260px;
+  	height: 136px;
+  }
+  
+  .as-a-design-parent {
+    position: absolute;
+    top: 53px;
+    left: 0; 
+    width: 260px;
+    height: 83px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .design-icons {
+    display: flex;
+    position: absolute;
+    top: -117px;
+    left: 0px;
+    gap: 20px;
+  }
+
+  /* PROJECTS SECTION */
+  #projects {
+    position: relative;
+    top: 50px;
+  }
+
+  .my_project-container {
+  	position: absolute;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+  	top: 50px;
+  	left: 0px;
+  }
+
+  .group-parent {
+  	width: 100%;
+  	position: relative;
+  	height: 102px;
+  	text-align: center;
+  	font-size: 14px;
+  	color: #000000;
+  }
+  
+  .group-project-1 {
+    position: absolute;
+    top: 400px;
+  }
+
+  .corall {
+    height: 325px;
+    width: 450px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: -300px;
+  }
+  
+  .project-name {
+  	position: absolute;
+  	top: 7px;
+  	left: 11px;
+  	display: inline-block;
+  	width: 104px;
+  	height: 23px;
+  }
+  
+  .project-name-parent {
+  	position: absolute;
+  	top: 50px;
+  	left: 0px;
+  	border-radius: 50px;
+  	border: 1px solid #000000;
+  	box-sizing: border-box;
+  	width: 126px;
+  	height: 33px;
+  }
+  
+  .text-project {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  }
+  
+  .view-project-parent {
+  	position: absolute;
+  	top: 50px;
+  	left: 301px;
+  	width: 119px;
+  	height: 33px;
+  	text-align: left;
+    cursor: pointer;
+  }
+  
+  .view-project {
+  	position: absolute;
+  	top: 7px;
+  	left: 12px;
+  	display: inline-block;
+    white-space: nowrap;
+  }
+  
+  .view-project-arrow {
+  	position: absolute;
+  	top: 7px;
+  	left: 115px;
+  	width: 20px;
+  	height: 20px;
+  	overflow: hidden;
+  }
+  
+  .rectangle-div {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 51px;
+  	background-color: rgba(217, 217, 217, 0);
+  	border: 1px solid #000000;
+  	box-sizing: border-box;
+  	width: 150px;
+  	height: 33px;
+  }
+  
+  .rectangle-frame {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 119px;
+  	height: 33px;
+  }
+
+  .group-project-2 {
+    position: absolute;
+    top: 400px;
+    left: 500px;
+  }
+
+  .ptv {
+    height: 325px;
+    width: 450px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: -300px;
+  }
+  
+  .project-name-2 {
+  	position: absolute;
+  	top: 7px;
+  	left: 11px;
+  	display: inline-block;
+  	width: 104px;
+  	height: 23px;
+  }
+  
+  .project-name-parent-2 {
+  	position: absolute;
+  	top: 50px;
+  	left: 0px;
+  	border-radius: 50px;
+  	border: 1px solid #000000;
+  	box-sizing: border-box;
+  	width: 126px;
+  	height: 33px;
+  }
+  
+  .text-project-2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  }
+  
+  .view-project-parent-2 {
+  	position: absolute;
+  	top: 50px;
+  	left: 301px;
+  	width: 119px;
+  	height: 33px;
+  	text-align: left;
+    cursor: pointer;
+  }
+  
+  .view-project-2 {
+  	position: absolute;
+  	top: 7px;
+  	left: 12px;
+  	display: inline-block;
+    white-space: nowrap;
+  }
+  
+  /* .view-project-arrow {
+  	position: absolute;
+  	top: 7px;
+  	left: 115px;
+  	width: 20px;
+  	height: 20px;
+  	overflow: hidden;
+  } */
+  
+  .rectangle-div-2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 51px;
+  	background-color: rgba(255, 0, 0, 0);
+  	border: 1px solid #000000;
+  	box-sizing: border-box;
+  	width: 150px;
+  	height: 33px;
+  }
+  
+  .rectangle-frame-2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 119px;
+  	height: 33px;
+  }
+  
+  .button-parent {
+  	position: absolute;
+  	top: 570px;
+  	right: 270px;
+  	width: 214px;
+  	height: 49px;
+    border-radius: 2px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-sizing: border-box;
+  	text-align: justify;
+  	font-size: 16px;
+    cursor: pointer;
+  } 
+
+  .button-parent:hover {
+    background-color: #5500ff;
+    transition: all 700ms ease;
+  }
+
+  .explore-all-the-project-wrapper {
+    position: absolute;
+    top: 12px;
+    left: 27px;
+    
+  }
+
+  .explore-all-the-project-wrapper p {
+    color: white;
+  }
+
+  
+  /* CONTACT ME SECTION */
+  #contact {
+    position: relative;
+    top: 150px;
+    min-height: fit-content;
+  }
+
+  .contact-parent {
+  	width: 100%;
+  	position: relative;
+  	height: 50px;
+  	text-align: left;
+  	font-size: 75px;
+  	color: #000000;
+  }
+  .lets-work-together-wrapper {
+  	position: absolute;
+  	top: 5px;
+  	left: 0px;
+    }
+    
+    .lets-work-together-wrapper p {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+    font-size: 64px;
+  	letter-spacing: 2px;
+  	display: inline-block;
+    white-space: nowrap;
+  }
+
+  .contact-container {
+  	position: absolute;
+  	top: 0px;
+  	right: -205px;
+  	text-align: justify;
+  	font-size: 25px;
+  }
+
+  .rectangle_my_email-parent {
+  	position: absolute;
+  	top: 200px;
+  	right: 725px;
+  	width: 325px;
+  	height: 60px;
+    text-align: center;
+    border-radius: 10px;
+  	background-color: #000000;
+  	border: 1px solid #000000;
+  	box-sizing: border-box;    
+    cursor: pointer;
+  }
+  
+  .email-div {
+  	position: absolute;
+    justify-content: center; 
+    top: 10px;
+  	left: 10px;
+  }
+  
+  .my_email {
+  	position: absolute;
+  	top: 3px;
+  	left: 0px;
+    color: white;
+  	font-weight: 400;
+    font-size: 20px;
+  	display: inline-block;
+    text-align: center;
+  }
+  
+  .my_email-wrapper {
+  	position: absolute;
+  	top: 0px;
+  	left: 48.3px;
+  	width: 227.3px;
+  	height: 40.5px;
+  }
+  
+  .gmail-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 36px;
+  	height: 36px;
+  	overflow: hidden;
+  }
+
+  .rectangle_my_email-parent:hover {
+    background-color: #5500ff;
+    transition: all 700ms ease;
+
+  }
+
+  /* FOOTER */
+   footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .icons-footer-container {
+    margin-top: 20px;
+  }
+
+  .footer-icon {
+    width: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .footer-icon:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+    color: white;
+  }   
